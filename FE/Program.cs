@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace FE
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Game game = new Game(new TestHangmanImpl());
+            game.Play();
         }
     }
 }
