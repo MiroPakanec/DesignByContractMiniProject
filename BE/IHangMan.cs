@@ -26,7 +26,7 @@ namespace BE
 
         public void AddKgs(int kgs)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); 
         }
     }
 }
