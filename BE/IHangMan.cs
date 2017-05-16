@@ -20,7 +20,7 @@ namespace BE
     }
 
     [ContractClassFor(typeof(IHangMan))]
-    internal sealed class HangManContracts : IHangMan
+    internal abstract class HangManContracts : IHangMan
     {
         [ContractInvariantMethod]
         private void ObjectInvariant()
@@ -116,12 +116,8 @@ namespace BE
 
         public void SetMaxErrors(int count)
         {
-<<<<<<< HEAD
-            throw new NotImplementedException(); 
-=======
             Contract.Requires(count > 0, "Count have to be greater than 0.");
             Contract.Ensures(GetMaxErrors() == count, "Max error count has to be equal to count.");
->>>>>>> eb0f759e2aff44a9f2294d2a105b11c6e727d895
         }
     }
 }

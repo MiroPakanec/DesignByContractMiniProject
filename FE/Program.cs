@@ -10,8 +10,7 @@ namespace FE
     {
         static void Main(string[] args)
         {
-            Game game = new Game(new TestHangmanImpl());
-            game.Play();
+            
         }
     }
 }
