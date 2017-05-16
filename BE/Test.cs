@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class Test : ITest
+    public class Test
     {
         public int GetWeight()
         {
